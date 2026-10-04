@@ -1,0 +1,25 @@
+# Dependencies and local tools
+node_modules/
+.npm/
+.venv/
+__pycache__/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.openai/
+.sites-checkout/
+.sites-checkout-*/
+.sites-runtime/
+
+# Temporary builds and previews
+*.tar.gz
+*.log
+qa-*.png
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
