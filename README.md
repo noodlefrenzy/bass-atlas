@@ -25,9 +25,11 @@ Then open `http://127.0.0.1:4173/`.
 
 GitHub Pages serves the root of the `gh-pages` branch. The `main` branch keeps the editable project, while `dist/` is the complete publishable site. After committing and pushing a change to `main`, publish its `dist/` tree with:
 
-```sh
-git subtree push --prefix dist origin gh-pages
+```powershell
+pwsh -File scripts/publish-gh-pages.ps1
 ```
+
+The script creates a commit from `main:dist` on `gh-pages` and pushes it. It does not switch branches or copy files in your working tree.
 
 The site uses relative asset paths, so it also works at `https://noodlefrenzy.github.io/bass-atlas/`. The `.nojekyll` file in `dist/` keeps GitHub Pages from applying Jekyll processing.
 
