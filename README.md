@@ -31,7 +31,7 @@ pwsh -File scripts/publish-gh-pages.ps1
 
 The script creates a commit from `main:dist` on `gh-pages` and pushes it. It does not switch branches or copy files in your working tree.
 
-The site uses relative asset paths, so it also works at `https://noodlefrenzy.github.io/bass-atlas/`. The `.nojekyll` file in `dist/` keeps GitHub Pages from applying Jekyll processing.
+The public site is available at `https://noodlefrenzy.com/bass-atlas/`; the `github.io` project URL redirects there. Relative asset paths make the site work under `/bass-atlas/`. The `.nojekyll` file in `dist/` keeps GitHub Pages from applying Jekyll processing.
 
 ## License
 
